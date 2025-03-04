@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KLYQ Project - Vending Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="project_vm.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="project_vm.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <ul></ul>
+            <li><a href="project.html">Projects</a></li>
+            <li>Vending Machine Website</li>
+        </ul>
+    </nav>
+
+    <!-- Project Title -->
+    <h1 class="project-title">Vending Machine Website</h1>
+    <p class="project-p">School project (24/2/2025)</p>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+
+        <!-- Modal for Zoomed Image -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="zoomedImage">
+        </div>
+
+       
+        <div class="project-item left">
+            <img src="item1.png" alt="Project Screenshot 1">
+            <div class="description">
+                <h2>View page</h2>
+                <p>Fetching location, status and payment methods from database and displays it on the frontend.</p>
+            </div>
+        </div>
+
+        <div class="project-item right">
+            <img src="map.png" alt="Project Screenshot 2">
+            <div class="description">
+                <h2>Interactive Map</h2>
+                <p>Implemented a map that allows the admin of the page to see where the vending machine is and allow to filter by location to get a closer look.</p>
+            </div>
+        </div>
+
+        <div class="project-item left">
+            <img src="api.png" alt="Project Screenshot 3">
+            <div class="description">
+                <h2>Database Integration</h2>
+                <p>Integrated MySQL by creating API Routes using express.js and node.js to communicate between clients and the database. </p>
+            </div>
+        </div>
+
+        <div class="project-item right">
+            <img src="add.png" alt="Project Screenshot 4">
+            <div class="description">
+                <h2>Adding items</h2>
+                <p>Implemented an intuitive form and quick item fill for ease of adding of items that will update the backend and frontend.</p>
+            </div>
+        </div>
+
+        <div class="project-item left">
+            <img src="update.png" alt="Project Screenshot 5">
+            <div class="description">
+                <h2>Updating items</h2>
+                <p>Implemented an intuitive form and vending machine filter and searchbar for items. Items are fetched from the database using API routes.</p>
+            </div>
+        </div>
+
+        <div class="project-item right">
+            <img src="delete.png" alt="Project Screenshot 6">
+            <div class="description">
+                <h2>Deleting items</h2>
+                <p>Simple and easy deleting user interface for the admin to delete items off the backend and frontend using API routes.</p>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Phone: <a href="tel:+65">+65 </a></p>
+                <p>Email: <a href="mailto:@gmail.com">@gmail.com</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="ig.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
