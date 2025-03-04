@@ -1,0 +1,450 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align to the left */
+    position: relative;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    padding-left: 20px; /* Space on the left side */
+
+    
+}
+
+
+.cursor-image {
+    position: fixed;
+    pointer-events: none; /* Prevents interfering with mouse events */
+    z-index: 1000;
+    opacity: 0; /* Start invisible */
+}
+
+.cursor-image img {
+    width: 700px;  /* Set a fixed or percentage-based size */
+    height: auto;   /* Maintain aspect ratio */
+}
+
+
+
+
+
+/* Additional styles for navbar and typed text */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 20px;
+    padding-left: 80px;
+    transition: all 0.3s ease;
+    /* font-size: 45px; */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.navbar ul li a.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+/* Sticky Navbar */
+.navbar.sticky {
+    position: fixed;
+    top: 10px;
+    left: 50.5%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 550px;
+    padding: 20px 10px;
+    width: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+   
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    color: white;
+    
+    
+ 
+    
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.quick-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quick-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.quick-nav ul li {
+    display: inline;
+}
+
+.quick-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.quick-nav ul li a:hover {
+    color: #4f78ff;
+}
+
+
+/* Project Title */
+.project-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 200px;
+    align-self: center;
+    background-image: linear-gradient(to right, #597ffd, #7daaf3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.project-p {
+    align-self: center;
+    top: 50px;
+    padding-bottom: 100px;
+}
+
+
+/* Project Details Section */
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 200px;
+    align-self: center;
+}
+
+/* Project Item */
+.project-item {
+    display: flex;
+    align-items: center;
+    max-width: 2000px;
+    gap: 30px;
+}
+
+/* Alternating Left & Right */
+.project-item.left {
+    flex-direction: row;
+}
+
+.project-item.right {
+    flex-direction: row-reverse;
+}
+
+/* Project Image Styling */
+.project-item img {
+    width: 700px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-item-left img {
+    width: 700px;
+    height: 500px;
+}
+
+.project-item-right img {
+    width: 700px;
+    height: 500px;
+}
+
+
+.project-item img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+/* Description Box */
+.description {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px;
+    border-radius: 0px;
+    backdrop-filter: blur(10px);
+    width: 800px;
+    color: white;
+    text-align: left;
+}
+
+.description h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    /* border-radius: 20px;  */
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+    
+}
+
+
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Glassy effect */
+    backdrop-filter: blur(10px); /* Blur for a frosted glass effect */
+    border-radius: 50%; /* Makes it a circle */
+    color: white; 
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Hover effect */
+.close:hover {
+
+    z-index: -1;
+}
+
+
+
+
+.breadcrumb {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    padding: 8px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+}
+
+.breadcrumb.sticky {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+
+.breadcrumb ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb li {
+    font-size: 16px;
+    color: #fff;
+}
+
+.breadcrumb li a {
+    text-decoration: underline;
+    color: white;
+    transition: color 0.3s ease;
+    
+}
+
+.breadcrumb li a:hover {
+    background-image: linear-gradient(to right, #597ffd, #7daaf3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.breadcrumb li::after {
+    content: ">";
+    margin-left: 10px;
+    color: #fff;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .project-item img {
+        width: 90%;
+    }
+
+    .description {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+
+

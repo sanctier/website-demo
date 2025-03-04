@@ -1,0 +1,214 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align to the left */
+    position: relative;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    padding-left: 20px; /* Space on the left side */
+
+    
+}
+
+
+.cursor-image {
+    position: fixed;
+    pointer-events: none; /* Prevents interfering with mouse events */
+    z-index: 1000;
+    opacity: 0; /* Start invisible */
+}
+
+.cursor-image img {
+    width: 700px;  /* Set a fixed or percentage-based size */
+    height: auto;   /* Maintain aspect ratio */
+}
+
+
+
+
+
+/* Additional styles for navbar and typed text */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 20px;
+    padding-left: 80px;
+    transition: all 0.3s ease;
+    /* font-size: 45px; */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.navbar ul li a.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+/* Sticky Navbar */
+.navbar.sticky {
+    position: fixed;
+    top: 10px;
+    left: 50.5%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 550px;
+    padding: 20px 10px;
+    width: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+   
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    color: white;
+    
+    
+ 
+    
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.quick-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quick-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.quick-nav ul li {
+    display: inline;
+}
+
+.quick-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.quick-nav ul li a:hover {
+    color: #4f78ff;
+}
+
+
+
+
+
+

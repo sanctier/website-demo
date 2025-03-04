@@ -1,0 +1,375 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align to the left */
+    position: relative;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    padding-left: 20px; /* Space on the left side */
+
+    
+}
+
+
+.cursor-image {
+    position: fixed;
+    pointer-events: none; /* Prevents interfering with mouse events */
+    z-index: 1000;
+    opacity: 0; /* Start invisible */
+}
+
+.cursor-image img {
+    width: 700px;  /* Set a fixed or percentage-based size */
+    height: auto;   /* Maintain aspect ratio */
+}
+
+
+
+
+
+/* Additional styles for navbar and typed text */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 20px;
+    padding-left: 80px;
+    transition: all 0.3s ease;
+    /* font-size: 45px; */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.navbar ul li a.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+/* Sticky Navbar */
+.navbar.sticky {
+    position: fixed;
+    top: 10px;
+    left: 50.5%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 550px;
+    padding: 20px 10px;
+    width: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  
+}
+
+
+
+
+.gradient-text {
+    background-image: linear-gradient(to right, #3262ff, #b2cdf7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+   
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: -12%;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    color: white;
+    
+    
+ 
+    
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.quick-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quick-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.quick-nav ul li {
+    display: inline;
+}
+
+.quick-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.quick-nav ul li a:hover {
+    color: #4f78ff;
+}
+
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 300px;
+    padding-top: 0px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 2000px;
+
+}
+
+.contact-description {
+    width: 50%;
+    padding-right: 20px;
+   
+}
+
+.contact-description h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-description p {
+    line-height: 1.5;
+    font-size: 26px;
+}
+
+.contact-picture {
+    width: 40%;
+    text-align: center;
+}
+
+.contact-picture img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-h1 {
+    position: relative;
+    top: -150px;
+    font-size: 28px;
+
+    
+}
+
+.contact-p {
+    position: relative;
+    top: -150px;
+    font-size: 18px;
+
+    
+}
+.contact-form-container {
+    transform: translateY(-100px);
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+#role {
+    color: white;
+}
+
+#role option {
+    color: #000;
+}
+
+button {
+    padding: 12px;
+    
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-image: linear-gradient(to right, #2b5dff, #b1cfff);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3a64d1;
+}
+
+
+/* Notification Style */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 300px;
+}
+
+.notification.error {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.notification.hidden {
+    display: none; /* Hide notification by default */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
